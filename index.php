@@ -1,7 +1,7 @@
 <?php
 if(!isset($_GET["pageId"])) {
     $title = "Home";
-    $templateString = 'Views/landing.php';
+    $templateString = 'Views/content/landing.html';
 }
 else {
     switch($_GET["pageId"]) {
