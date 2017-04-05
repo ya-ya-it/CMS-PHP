@@ -17,12 +17,12 @@ session_start();
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class=<?php echo ($title == "Todos") ? "active" : "" ?>><a href="index.php"><i
-                                class="fa fa-home fa-lg"></i>Home</a></li>
+                <li><a href="index.php"><i class="fa fa-home fa-lg"></i>Home</a></li>
 
                 <?php if (isset($_SESSION["is_logged_in"])) : ?>
-                    <li><p class="navbar-text">Hello!</p></li>
-                    <li><a href=index.php?pageId=logout><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                    <li class=<?php echo ($title == "Todos") ? "active" : "" ?>><a href=index.php?pageId=todos>ToDo List</a></li>
+                    <li><a href=index.php?pageId=contact>Contact Us</a></li>
+                    <li><a href=index.php?pageId=logout><i class="fa fa-sign-out fa-lg"></i>Log out</a></li>
                 <?php else: ?>
                     <li class=<?php echo ($title == "Login") ? "active" : "" ?>><a href="index.php?pageId=login"><i
                                     class="fa fa-sign-in fa-lg"></i> Login</a></li>

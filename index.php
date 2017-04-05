@@ -19,6 +19,14 @@ else {
             $title = "Register";
             $templateString = 'Views/auth/register.php';
             break;
+        case "todos":
+            $title = "Todos";
+            $templateString = 'Views/content/todos.php';
+            break;
+        case "contact":
+            $title = "Todos";
+            $templateString = 'Views/content/contact.php';
+            break;
         default:
             $title = "404";
             $templateString = "Views/errors/404.php";

@@ -14,6 +14,7 @@ $title = "Register";
 ?>
 
 <!-- Render the Registration form  -->
+<!-- Render the Registration form  -->
 <main class="container">
     <!-- Display flash messages  -->
     <?php if ($messages != "") : ?>

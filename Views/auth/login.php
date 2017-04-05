@@ -1,4 +1,3 @@
-
 <?php
 if(isset($_POST["username"])){
     $username = $_POST["username"];
@@ -11,6 +10,7 @@ else {
 }
 $title = "Login";
 ?>
+
 
 <main class="container">
     <?php if ($messages != "") : ?>

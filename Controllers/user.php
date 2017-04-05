@@ -25,7 +25,7 @@ function Login($username, $password) {
             $_SESSION["is_logged_in"] = true;
             $_SESSION["displayName"] = $hashed_password["displayName"];
             // if everything good go to index page
-            header('Location: index.php');
+            header('Location: index.php?pageId=todos');
         }
         else {
             $statement->closeCursor(); // close the connection
@@ -79,17 +79,8 @@ function Register($username, $password) {
     return $messages;
 }
 function Logout() {
-    if(session_status() != PHP_SESSION_ACTIVE) {
-        session_start();
-    }
-    if(isset($_SESSION["is_logged_in"])) {
-        $_SESSION = Array();
-        session_destroy();
-        // if everything good go to index page
-        header('Location: index.php?pageId=Login');
-    }
-    else {
-        header('Location: index.php');
-    }
+    session_start();
+    session_destroy();
+    header('Location: index.php');
 }
 ?>
