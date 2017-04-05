@@ -12,7 +12,7 @@ else {
         case "logout":
             include_once("Controllers/user.php");
             Logout();
-            $title = "Todos";
+            $title = "Home";
             $templateString = 'Views/content/landing.html';
             break;
         case "register":
@@ -25,7 +25,7 @@ else {
             break;
         case "contact":
             $title = "Todos";
-            $templateString = 'Views/content/contact.php';
+            $templateString = 'Views/content/contact_us.php';
             break;
         default:
             $title = "404";
