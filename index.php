@@ -1,6 +1,6 @@
 <?php
 if(!isset($_GET["pageId"])) {
-    $title = "Todos";
+    $title = "CMS";
     $templateString = 'Views/content/landing.html';
 }
 else {
@@ -19,12 +19,8 @@ else {
             $title = "Register";
             $templateString = 'Views/auth/register.php';
             break;
-        case "todos":
-            $title = "Todos";
-            $templateString = 'Views/content/todos.php';
-            break;
         case "contact":
-            $title = "Todos";
+            $title = "Contact";
             $templateString = 'Views/content/contact_us.php';
             break;
         default:
