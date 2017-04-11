@@ -26,7 +26,7 @@ if(isset($_POST["name"])){
     <?php endif ?>
     <div class="row">
         <div class="col-md-offset-4 col-md-4">
-            <h1>Please Login</h1>
+            <h1>Contact Us</h1>
             <form method="post" action="index.php?pageId=contact">
                 <fieldset class="form-group">
                     <label for="FullNameTextBox">Full Name:</label>
@@ -46,7 +46,7 @@ if(isset($_POST["name"])){
                 </fieldset>
                 <fieldset class="form-group text-right">
                     <input type="submit" class="btn btn-success" value="Send"/>
-                    <a href="index.php">
+                    <a href="index.php?pageId=contact">
                         <input type="button" class="btn btn-warning" value="Cancel"/>
                     </a>
                 </fieldset>
