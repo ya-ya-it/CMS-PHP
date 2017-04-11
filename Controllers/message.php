@@ -5,7 +5,7 @@ function ProcessEmail($name, $emailAddress, $contactNum, $details) {
 
     $from = new SendGrid\Email(null, $emailAddress);
     $subject = "Email from Contact Form";
-    $to = new SendGrid\Email(null, "tom.tsiliopoulos@gmail.com");
+    $to = new SendGrid\Email(null, "ya-ya-it@yandex.com");
     $details .= "\n \nFull Name:" . $name . "\nContact Number: " . $contactNum;
     $content = new SendGrid\Content("text/plain", $details);
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
