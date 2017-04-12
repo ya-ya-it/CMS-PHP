@@ -25,7 +25,7 @@ function Login($username, $password) {
             $_SESSION["is_logged_in"] = true;
             $_SESSION["displayName"] = $hashed_password["displayName"];
             // if everything good go to index page
-            header('Location: index.php?pageId=todos');
+            header('Location: index.php?pageId=dashboard');
         }
         else {
             $statement->closeCursor(); // close the connection

@@ -1,3 +1,9 @@
-/**
- * Created by Dasha on 4/3/2017.
- */
+(function(){
+    $(".btn-danger").click(function(event){
+
+        if(!confirm("Are You Sure?")) {
+            event.preventDefault();
+            window.location.assign("index.php?pageId=list");
+        }
+    });
+})();

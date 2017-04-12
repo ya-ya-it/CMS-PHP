@@ -17,10 +17,20 @@ session_start();
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+
+                <?php
+                include_once("Controllers/pages.php");
+                $pages = ReadPage();
+                foreach($pages as $page) : ?>
+                    <li><a href=index.php?pageId=template&pageID=<?php echo $page['page_id'] ?>><?php echo $page['title'] ?></a></li>
+                <?php endforeach; ?>
+
                 <li class=<?php echo ($title == "CMS") ? "active" : "" ?>><a href="index.php"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                <li><a href=index.php?pageId=contact>Contact Us</a></li>
+                <li class=<?php echo ($title == "Contact") ? "active" : "" ?>><a href=index.php?pageId=contact><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
 
                 <?php if (isset($_SESSION["is_logged_in"])) : ?>
+                    <li><p class="navbar-text">Welcome, <?php echo $_SESSION["displayName"]; ?></p></li>
+                    <li><a href=index.php?pageId=dashboard><i class="fa fa-tachometer fa-lg"></i>Dashboard</a></li>
                     <li><a href=index.php?pageId=logout><i class="fa fa-sign-out fa-lg"></i>Log out</a></li>
                 <?php else: ?>
                     <li class=<?php echo ($title == "Login") ? "active" : "" ?>><a href="index.php?pageId=login"><i

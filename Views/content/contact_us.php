@@ -45,8 +45,8 @@ if(isset($_POST["name"])){
                     <textarea class="form-control" rows="5" id="DetailsTextArea" name="details" placeholder="Enter Your Message" required></textarea>
                 </fieldset>
                 <fieldset class="form-group text-right">
-                    <input type="submit" class="btn btn-success" value="Send"/>
-                    <a href="index.php?pageId=contact">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="index.php">
                         <input type="button" class="btn btn-warning" value="Cancel"/>
                     </a>
                 </fieldset>

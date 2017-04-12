@@ -23,6 +23,39 @@ else {
             $title = "Contact";
             $templateString = 'Views/content/contact_us.php';
             break;
+        case "list":
+            $title = "Pages";
+            $templateString = 'Views/cms/list.php';
+            break;
+        case "details";
+            if($_GET["pageID"]==0) {
+                $title = "Add Page";
+            }
+            else {
+                $title = "Edit Page";
+            }
+            $templateString = 'Views/cms/page.php';
+            break;
+        case "page":
+            $title = "Update Page";
+            $templateString = 'Views/cms/page.php';
+            break;
+        case "update":
+            $title = "Update Page";
+            $templateString = 'Views/cms/update.php';
+            break;
+        case "delete":
+            $title = "Delete Page";
+            $templateString = 'Views/cms/delete.php';
+            break;
+        case "template":
+            $title = "Page";
+            $templateString = 'Views/cms/template.php';
+            break;
+        case "dashboard":
+            $title = "Dashboard";
+            $templateString = 'Views/cms/dashboard.php';
+            break;
         default:
             $title = "404";
             $templateString = "Views/errors/404.php";

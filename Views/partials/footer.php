@@ -1,4 +1,4 @@
-<nav class="footer panel-footer">
+<nav class="panel-footer navbar-fixed-bottom">
     <div class="container">
         <div class="col-md-12 widget">© 2017 | Daria Davydenko</div>
 
