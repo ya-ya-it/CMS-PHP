@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * File name: register.php
+ * Author's name: Daria Davydenko
+ * Student ID: 200335788
+ * Website name: CMS
+ * https://comp1006-assignment2.herokuapp.com/
+ *
+ * This is a php view with the register form.
+ */
+
 $messages = "";
 include_once('Models/User.php');
 if(isset($_POST["username"])){
@@ -13,8 +24,7 @@ else {
 $title = "Register";
 ?>
 
-<!-- Render the Registration form  -->
-<!-- Render the Registration form  -->
+<!--Registration form  -->
 <main class="container">
     <!-- Display flash messages  -->
     <?php if ($messages != "") : ?>
@@ -47,3 +57,4 @@ $title = "Register";
         </div>
     </div>
 </main>
+<!-- End registration form -->

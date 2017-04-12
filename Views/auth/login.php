@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * File name: login.php
+ * Author's name: Daria Davydenko
+ * Student ID: 200335788
+ * Website name: CMS
+ * https://comp1006-assignment2.herokuapp.com/
+ *
+ * This is a php view with the login form.
+ */
+
 if(isset($_POST["username"])){
     $username = $_POST["username"];
     $password = $_POST["password"];
@@ -11,7 +22,7 @@ else {
 $title = "Login";
 ?>
 
-
+<!-- Login form -->
 <main class="container">
     <?php if ($messages != "") : ?>
         <div class="alert alert-danger"><?php echo $messages ?></div>
@@ -39,3 +50,4 @@ $title = "Login";
         </div>
     </div>
 </main>
+<!-- End Login form -->

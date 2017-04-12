@@ -1,9 +1,20 @@
 <?php
+
+/**
+ * File name: user.php
+ * Author's name: Daria Davydenko
+ * Student ID: 200335788
+ * Website name: CMS
+ * https://comp1006-assignment2.herokuapp.com/
+ *
+ * This is a php controller which login or register user into the system.
+ */
+
 include_once("Config/database.php");
 function CheckIfAuthenticated() {
     if(!isset($_SESSION["is_logged_in"])) {
         // if everything good go to index page
-        header('Location: index.php?pageId=Login');
+        header('Location: index.php?pageId=login');
     }
     return true;
 }

@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * File name: message.php
+ * Author's name: Daria Davydenko
+ * Student ID: 200335788
+ * Website name: CMS
+ * https://comp1006-assignment2.herokuapp.com/
+ *
+ * This is a php controller for sending message through SendGrid.
+ */
+
 function ProcessEmail($name, $emailAddress, $contactNum, $details) {
 
     require 'vendor/autoload.php';

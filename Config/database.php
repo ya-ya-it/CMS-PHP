@@ -3,7 +3,7 @@
  * File name: database.php
  * Author's name: Daria Davydenko
  * Student ID: 200335788
- * Website name: Todos
+ * Website name: CMS
  * https://comp1006-assignment2.herokuapp.com/
  *
  * This is a php file with all settings about connection to a ClearDB

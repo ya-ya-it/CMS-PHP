@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * File name: list.php
+ * Author's name: Daria Davydenko
+ * Student ID: 200335788
+ * Website name: CMS
+ * https://comp1006-assignment2.herokuapp.com/
+ *
+ * This is a php view with the list of pages in a table.
+ */
+
 include_once('Controllers/user.php');
 CheckIfAuthenticated();
 require_once('Controllers/pages.php');

@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * File name: navbar.php
+ * Author's name: Daria Davydenko
+ * Student ID: 200335788
+ * Website name: CMS
+ * https://comp1006-assignment2.herokuapp.com/
+ *
+ * This is a php partial with the navbar part.
+ */
+
 session_start();
 ?>
 <nav class="navbar navbar-default">
@@ -29,7 +40,6 @@ session_start();
                 <li class=<?php echo ($title == "Contact") ? "active" : "" ?>><a href=index.php?pageId=contact><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
 
                 <?php if (isset($_SESSION["is_logged_in"])) : ?>
-                    <li><p class="navbar-text">Welcome, <?php echo $_SESSION["displayName"]; ?></p></li>
                     <li><a href=index.php?pageId=dashboard><i class="fa fa-tachometer fa-lg"></i>Dashboard</a></li>
                     <li><a href=index.php?pageId=logout><i class="fa fa-sign-out fa-lg"></i>Log out</a></li>
                 <?php else: ?>

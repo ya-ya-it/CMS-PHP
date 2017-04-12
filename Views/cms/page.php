@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * File name: page.php
+ * Author's name: Daria Davydenko
+ * Student ID: 200335788
+ * Website name: CMS
+ * https://comp1006-assignment2.herokuapp.com/
+ *
+ * This is a php view with the form to create a new page or to edit the existing one.
+ */
+
 include_once('Controllers/user.php');
 CheckIfAuthenticated();
 include_once('Controllers/pages.php');
@@ -17,6 +28,7 @@ if ($pageID == 0) {
 }
 ?>
 
+<!-- Start From -->
 <div class="container">
     <div class="row">
         <div class="col-md-offset-3 col-md-6">
@@ -47,3 +59,4 @@ if ($pageID == 0) {
         </div>
     </div>
 </div>
+<!-- End form -->

@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * File name: index.php
+ * Author's name: Daria Davydenko
+ * Student ID: 200335788
+ * Website name: CMS
+ * https://comp1006-assignment2.herokuapp.com/
+ *
+ * This is a php file with the routing.
+ */
+
 if(!isset($_GET["pageId"])) {
     $title = "CMS";
     $templateString = 'Views/content/landing.html';
