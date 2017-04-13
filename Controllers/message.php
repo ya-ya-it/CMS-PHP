@@ -17,7 +17,7 @@ function ProcessEmail($name, $emailAddress, $contactNum, $details) {
     $from = new SendGrid\Email(null, $emailAddress);
     $subject = "Email from CMS Contact";
     $to = new SendGrid\Email(null, "ya-ya-it@yandex.com");
-    $mailInfo = "Name: " . $name . "\nContact Number: " . $contactNum;
+    $mailInfo = "Name: " . $name . " \n Contact Number: " . $contactNum;
     $mailInfo .= "\n \n " . $details;
     $content = new SendGrid\Content("text/plain", $mailInfo);
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
